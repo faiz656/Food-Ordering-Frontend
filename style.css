@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0ebe3;
+    color: #4a4540;
+}
+
+header {
+    background: #3d3530;
+    color: #e8e0d5;
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #f5efe8;
+}
+
+header p {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #b0a89e;
+    letter-spacing: 1px;
+}
+
+nav {
+    background: #ebe5dc;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #d5ccc0;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #5c524a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #d5ccc0;
+    color: #3d3530;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.container h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6b5e52;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    border-left: 3px solid #b5a090;
+    padding-left: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #faf7f3;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0d8ce;
+    transition: transform 0.15s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-emoji {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a4035;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #9e948a;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #8a6e55;
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 9px 18px;
+    background: #7a6355;
+    color: #f5f0ea;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background: #5c4b3f;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 14px;
+    width: 100%;
+    border: 1px solid #d5ccc0;
+    border-radius: 8px;
+    background: #faf7f3;
+    color: #4a4540;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #a09080;
+}
+
+input::placeholder {
+    color: #b5a898;
+}
+
+.cart-item {
+    background: #faf7f3;
+    border: 1px solid #e0d8ce;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cart-item-info {
+    font-size: 0.9rem;
+    color: #4a4540;
+}
+
+.cart-item-price {
+    font-weight: 600;
+    color: #7a6355;
+}
+
+.cart-item button {
+    width: auto;
+    padding: 6px 12px;
+    background: #c2a898;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.cart-item button:hover {
+    background: #9e8070;
+}
+
+.total-box {
+    background: #ebe5dc;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 1rem;
+    color: #5c4b3f;
+    font-weight: 600;
+}
+
+.total-box span {
+    color: #8a6e55;
+    font-size: 1.1rem;
+}
+
+.checkout-box {
+    background: #faf7f3;
+    border: 1px solid #e0d8ce;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.order-card {
+    background: #faf7f3;
+    border: 1px solid #e0d8ce;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.order-info {
+    font-size: 0.9rem;
+    color: #4a4540;
+}
+
+.order-info strong {
+    color: #3d3530;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #e8e0d5;
+    color: #7a6355;
+    margin-left: 8px;
+}
+
+.status-badge.ready {
+    background: #d4e8d0;
+    color: #4a7040;
+}
+
+.order-card button {
+    width: auto;
+    padding: 7px 14px;
+    font-size: 0.82rem;
+    background: #8a9e80;
+    border-radius: 8px;
+}
+
+.order-card button:hover {
+    background: #6a7e60;
+}
+
+.empty-msg {
+    text-align: center;
+    padding: 40px 20px;
+    color: #b5a898;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Cravings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>☕ Campus Cravings</h1>
+    <p>Student Friendly Food</p>
+</header>
+
+<nav>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="admin.html">⚙️ Admin</a>
+</nav>
+
+<div class="container">
+
+    <h2>🍔 Burgers</h2>
+    <div class="menu-grid">
+        <div class="card">
+            <span class="card-emoji">🍔</span>
+            <h3>Zinger Burger</h3>
+            <p>Juicy crispy chicken burger</p>
+            <span class="price">Rs. 450</span>
+            <button onclick="addToCart('Zinger Burger', 450)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🥩</span>
+            <h3>Beef Burger</h3>
+            <p>Classic smash beef patty</p>
+            <span class="price">Rs. 550</span>
+            <button onclick="addToCart('Beef Burger', 550)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🧀</span>
+            <h3>Cheese Burger</h3>
+            <p>Double cheese, extra sauce</p>
+            <span class="price">Rs. 500</span>
+            <button onclick="addToCart('Cheese Burger', 500)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 style="margin-top:30px;">🌯 Wraps & Rolls</h2>
+    <div class="menu-grid">
+        <div class="card">
+            <span class="card-emoji">🌯</span>
+            <h3>Shawarma</h3>
+            <p>Chicken wrap with garlic sauce</p>
+            <span class="price">Rs. 250</span>
+            <button onclick="addToCart('Shawarma', 250)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🫔</span>
+            <h3>Chicken Roll</h3>
+            <p>Spicy chicken in paratha</p>
+            <span class="price">Rs. 180</span>
+            <button onclick="addToCart('Chicken Roll', 180)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🥙</span>
+            <h3>Seekh Kabab Roll</h3>
+            <p>Grilled kabab wrapped up</p>
+            <span class="price">Rs. 220</span>
+            <button onclick="addToCart('Seekh Kabab Roll', 220)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 style="margin-top:30px;">🍕 Pizza & Sides</h2>
+    <div class="menu-grid">
+        <div class="card">
+            <span class="card-emoji">🍕</span>
+            <h3>Pizza</h3>
+            <p>Cheesy loaded pizza</p>
+            <span class="price">Rs. 900</span>
+            <button onclick="addToCart('Pizza', 900)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🍟</span>
+            <h3>Fries</h3>
+            <p>Crispy salted fries</p>
+            <span class="price">Rs. 120</span>
+            <button onclick="addToCart('Fries', 120)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🍗</span>
+            <h3>Chicken Nuggets</h3>
+            <p>6 piece crispy nuggets</p>
+            <span class="price">Rs. 300</span>
+            <button onclick="addToCart('Chicken Nuggets', 300)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 style="margin-top:30px;">🥤 Drinks</h2>
+    <div class="menu-grid">
+        <div class="card">
+            <span class="card-emoji">🥤</span>
+            <h3>Cold Drink</h3>
+            <p>Pepsi / 7Up / Mirinda</p>
+            <span class="price">Rs. 80</span>
+            <button onclick="addToCart('Cold Drink', 80)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">🧃</span>
+            <h3>Juice</h3>
+            <p>Fresh seasonal juice</p>
+            <span class="price">Rs. 100</span>
+            <button onclick="addToCart('Juice', 100)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <span class="card-emoji">☕</span>
+            <h3>Chai</h3>
+            <p>Desi doodh patti chai</p>
+            <span class="price">Rs. 50</span>
+            <button onclick="addToCart('Chai', 50)">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
